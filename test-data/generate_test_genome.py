@@ -90,7 +90,7 @@ if __name__ == '__main__':
     seq, features = simulate_genome(maxLength=args.length, gene_frequency=args.freq)
 
     with open(os.path.join(args.output, '%s.fasta' % args.name), 'w') as outFile:
-        print('>%s Total length %d Gene count %d' % (args.name, len(seq), sum(feature[2] == 'mRNA' for feature in features)), file=outFile)
+        print('>%s Total length %d Gene count %d' % (args.name, len(seq), sum(feature[1] == 'mRNA' for feature in features)), file=outFile)
         for i in range(0, len(seq), 70):
             print(seq[i:i+70], file=outFile)
 
