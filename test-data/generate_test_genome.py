@@ -18,7 +18,7 @@ GENE_STATES = [UTR_5, CDS, INTRON, UTR_3, END]
 GENE_TP = [[0.97, 0.03, 0, 0, 0],
             [0, 0.99, 0.009, 0.001, 0],
             [0, 0.005, 0.995, 0, 0],
-            [0, 0, 0, 0.96, 0.04],
+            [0, 0, 0, 0.99, 0.01],
             [0, 0, 0, 0, 1]]
 
 def random_base():
@@ -79,7 +79,7 @@ def simulate_genome(maxLength, gene_frequency):
 def parse_argument():
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--name', required=True, help='Genome name.')
-    parser.add_argument('-f', '--freq', type=float, default=1e-2, help='Gene frequency.')
+    parser.add_argument('-f', '--freq', type=float, default=5e-3, help='Gene frequency.')
     parser.add_argument('-l', '--length', type=int, default=1e5, help='(Approximately) Max genome length.')
     parser.add_argument('-o', '--output', required=True, help='Output directory.')
 
