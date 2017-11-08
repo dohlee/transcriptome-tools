@@ -42,11 +42,14 @@ kallisto index [arguments] FASTA-files
 ```
 
 - Required argument:
-  `-i, --index=STRING` : Filename for the kallisto index to be constructed
+
+`-i, --index=STRING` : Filename for the kallisto index to be constructed
 
 - Optional argument:
-  `-k, --kmer-size=INT` : k-mer (odd) length (default: 31, max value: 31)
-  `--make-unique` : Replace repeated target names with unique names
+
+`-k, --kmer-size=INT` : k-mer (odd) length (default: 31, max value: 31)
+
+`--make-unique` : Replace repeated target names with unique names
 
 For example, run kallisto index with command below:
 
