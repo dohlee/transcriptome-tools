@@ -7,12 +7,13 @@
 
 # Ignore all files in reference_genome and data directory
 # but README.md, rules, and Snakefile
-reference_genome/*
-!reference_genome/README.md
-!reference_genome/rules/*
-!reference_genome/Snakefile
+reference-data/*
+!reference-data/README.md
+!reference-data/rules/*
+!reference-data/Snakefile
 
-data/*
-!data/README.md
-!data/rules/*
-!data/Snakefile
+test-data/*
+!test-data/scripts
+!test-data/README.md
+!test-data/rules/*
+!test-data/Snakefile
